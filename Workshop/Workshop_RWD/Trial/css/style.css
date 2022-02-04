@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(to left,palegreen,thistle,rgb(182, 127, 182));
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    row-gap: 2%;
+    column-gap: 2%;
+}
+.header{
+    background: thistle;
+    gap: 10px;
+    grid-column: 1/4;
+    display: flex;
+}
+.logo{
+    width: 20%;
+    padding-left: 10px;
+}
+.navbar{
+    text-align: right;
+    padding-top:30px;
+    padding-right: 15px;
+    font-size: 20px;
+    font-weight: 900;
+    width: 100%;
+}
+.image-container{
+    text-align: center;
+    grid-column: 1/4;
+}
+
+img{
+   border-radius: 15%;
+   width: 300px;
+    height:200px;
+    box-shadow: 5px 10px 10px;
+}
+[class*="content-"]{
+    border: 1px solid black;
+    box-shadow: 5px 10px 10px;
+    border-radius: 15%;
+    text-align:justify;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: linear-gradient(thistle,whitesmoke,yellowgreen);
+}
+
+h3{
+    text-align: center;
+}
+
+.content-4{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.button{
+    border: 1px solid black;
+    box-shadow: 5px 10px 10px;
+    border-radius: 25%;
+    background: radial-gradient(green,yellowgreen,lime);
+}
+
+button{
+    position: relative;
+    font-size: 20px;
+    top: 40%;
+    left: 35%;
+    background: yellowgreen;
+}
+.footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background: chocolate;
+    text-align: center;
+
+}
+
+@media only screen and (max-width:798px) {
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .header{
+        background: thistle;
+        width: 100%; 
+        flex-wrap: wrap;
+    }
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+    .navbar{
+        text-align: center;
+        width: 100%;
+    }
+    .button{
+        width: 100%;
+        border: 1px solid black;
+        background: radial-gradient(green,yellowgreen,lime);
+    }
+    
+    button{
+        font-size: 20px;
+        top: 8%;
+        left: 38%;
+        background: yellowgreen;
+    }
+    .footer{
+        width: 100%;
+        background: chocolate;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:1000px) and (min-width:800px) {
+    .container{
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+  
+}
+
+

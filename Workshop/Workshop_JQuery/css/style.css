@@ -1,0 +1,84 @@
+body{
+    background:radial-gradient(palegreen,yellowgreen,thistle);
+}
+
+#heading{
+    font-size: 50px;
+    position: absolute;
+    margin-left: 610px;
+    margin-top: 60px;
+    display: flex;
+
+}
+button{
+    font-size: 20px;
+    text-shadow: 2px 3px 5px yellowgreen;
+    box-shadow: 5px 10px 10px ;
+    border:none;
+    background: linear-gradient(palegreen,thistle,orange,green);
+    border-radius: 10%;
+    cursor: pointer;
+}
+.button_container{
+    text-align: center;
+}
+
+#cakeContainer{
+    display: flex;
+    flex-wrap: wrap;
+    background: url("https://i0.wp.com/zeevector.com/wp-content/uploads/Dark-Wood-Texture-HD-Background.jpg?fit=1949%2C1476&ssl=1");
+    width: 80%;
+    height: auto;
+    justify-content: center;
+    margin: auto;
+   
+}
+
+#myInput{
+    box-shadow:5px 10px 10px;
+    width: 200px;
+    height: 30px;
+    border-radius: 15%;
+}
+
+figure{
+    position: relative;
+    width: 250px;
+}
+
+img{
+    display: block;
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 25%;
+    box-shadow: 5px 10px 10px;
+}
+
+figcaption{
+    position:absolute;
+    text-align: center;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 25%;
+    background: rgba(0,0,0,0.6);
+    color: whitesmoke;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 0;
+    transition: 0.25s ease;
+}
+
+figure:hover figcaption{
+    opacity: 1;
+}
+
+
+
+

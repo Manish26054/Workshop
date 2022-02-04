@@ -1,0 +1,22 @@
+body{
+    background: black;
+}
+label{
+    color:chocolate;
+}
+button:hover{
+    background: green;
+    height: 25px;
+    width: 80px;
+}
+#div1{
+    display: flex;
+}
+#div3{
+    font-size: 50px;
+ background: radial-gradient(red,orange);
+ position: absolute;
+ margin-left: 550px;
+ margin-top: 60px;
+
+}
