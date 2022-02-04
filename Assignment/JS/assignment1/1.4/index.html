@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Embedding Script tag in HTML Document</title>
+        <script>
+            var headParam=50;
+            /* define variable headParam and initialize it to some integer value and
+            display
+            the value as shown in the figure 4. */
+        </script>
+        <hr>
+    </head>
+
+    <body>
+        <div id="text"></div>
+        <br>
+        <div id="result"></div>
+        <script>
+            var bodyParam=100;
+            /*define variable bodyParam and initialize it to some integer value and
+            display
+            the value as shown in the figure 4 */
+        </script>
+        <hr>
+        <script src="./mathFunction.js">
+        </script>
+        <script>
+            document.getElementById("result").innerHTML=`Addition of `+headParam+` and `+bodyParam+` is `+addNumbers(headParam,bodyParam);
+            /* Invoke the method addNumbers(headParam, bodyParam) defined in common.js file and pass the two variables headVar and bodyVar defined in the head and the body script tag and display the added result as shown in the Figure 4 */
+        </script>
+     
+    </body>
+
+</html>

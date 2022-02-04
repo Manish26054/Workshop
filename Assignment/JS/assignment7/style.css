@@ -1,0 +1,172 @@
+#spinner {
+    display: block;
+    width: 15%;
+    height: 15%;
+    object-fit: cover;
+  }
+  html {
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .top-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  .logo {
+    height: auto;
+    width: 10%;
+  }
+  
+  .nav-bar {
+    flex: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 20px;
+  }
+  
+  .nav-bar a {
+    text-decoration: none;
+    color: darkblue;
+    cursor: pointer;
+    padding: 15px 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .menu {
+    position: fixed;
+    right: 0;
+  }
+  /* main contents */
+  .main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 78vh;
+  }
+  
+  .article1 {
+    flex: 75%;
+    column-count: 3;
+    column-gap: 3px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  
+  .article1 > p {
+    margin: 10%;
+    line-height: 3.5rem;
+    word-spacing: 0.5rem;
+  }
+  
+  /* main footer */
+  .main-footer {
+    position: fixed;
+    bottom: 0;
+    background-color: grey;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* style products */
+  .product-container {
+    flex: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  .product {
+    box-shadow: 0 4px 8px 0 lightgray;
+    margin: 8px;
+    text-align: center;
+    font-family: arial;
+    width: 300px;
+  }
+  .product img {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .product button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  .product button:hover {
+    opacity: 0.7;
+  }
+  
+  /* form styling */
+  .reg-form {
+    flex: 75%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  .reg-form form {
+    margin-left: 150px;
+    margin-right: 10px;
+    width: 70%;
+  }
+  input[type="text"],
+  input[type="password"],
+  select,
+  textarea,
+  .txt {
+    width: 100%;
+    padding: 10px 18px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid red;
+  }
+  input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  .error {
+    color: red;
+  }
+  
+  /* mobile  */
+  @media only screen and (min-width: 300px) and (max-width: 600px) {
+    /* header  */
+    .top-header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .logo {
+      height: auto;
+      width: 25%;
+    }
+  
+    .nav-bar {
+      flex-direction: column;
+    }
+  
+    /* form */
+    .reg-form form {
+      margin-left: 5px;
+      margin-right: 5px;
+      width: 90%;
+    }
+  }
+  

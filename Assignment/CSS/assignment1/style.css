@@ -1,0 +1,34 @@
+body{
+    background: cadetblue;
+}
+
+.table-container{
+    border: 1px solid black;
+    width: 25%;
+}
+table {
+    background-color: bisque;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 4px solid white;
+  }
+
+  
+  th, td {
+    border: 2px solid white;
+    text-align: left;
+    padding: 10px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #1e9e2f;
+  }
+
+  th{
+      background-color: rgb(143, 143, 143);
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+  }
+

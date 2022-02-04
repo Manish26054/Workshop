@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Selector API</title>
+    <style>
+    #d1{
+        height: 80px;
+        width: 400px;
+    }
+    #btn{
+        background: green;
+        color: tomato;
+    }
+    </style>
+</head>
+<body>
+
+    <h2><u>Selector API Example</u></h2>
+    <div id="d1">
+        <p>
+                The Selectors API specification defines methods for retrieving Element nodes from the DOM by matching against a group of selectors, and for testing if a given element matches a particular selector. It is often desirable to perform DOM operations on a specific set of elements in a document.
+        </p>
+    </div><br>
+
+    <button id="btn" type="button" onclick="change()">COLOR</button>
+
+    <script>
+        function change(){
+            document.getElementById("d1").style.color="violet";
+        }
+    </script>
+</body>
+</html>

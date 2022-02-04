@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <form action="#" onsubmit="return validateForm()">
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" class="txt">
+        <p id="fname"></p>
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" class="txt">
+
+        <label for="date"><b>DOB</b></label>
+        <input type="date" name="date" id="date" class="txt">
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" class="txt">
+
+        <div class="txt"> 
+        <label for="hobby"><b>Hobby:</b></label>
+        <input type="checkbox" name="hobby1" id="hobby1" value="Photography">
+        <label for="hobby1">Photography</label>
+
+        <input type="checkbox" value="Reading" name="hobby2" id="hobby2">
+        <label for="hobby2">Reading</label>
+
+        <input type="checkbox" name="hobby3" value="Watching Movies" id="hobby3" >
+        <label for="hobby3" >Watching Movies</label>
+        <p id=errHobby></p>
+    </div>
+        <label for="writer"><b>Favourite Writer</b></label>
+        <input type="text" placeholder="Enter Writer" name="writer" id="writer" class="txt">
+
+
+        <input type="submit" value="register">
+        <br>
+        <br>
+        <div class="error"></div>
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

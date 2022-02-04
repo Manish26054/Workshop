@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Web Worker</title>
+</head>
+
+<h2>Count numbers: <output id="result" style="color: coral"></output></h2>
+
+<button onclick="startWorker()">Start Worker</button> 
+<button onclick="stopWorker()">Stop Worker</button>
+
+
+<script>
+var worker;
+
+function startWorker() {
+    worker = new Worker("counter.js");
+    worker.onmessage = function(event) {
+                                        document.getElementById("result").innerHTML = event.data;
+                                    };
+}
+
+function stopWorker() { 
+  worker.terminate();
+}
+</script>
+
+</body>
+</html>

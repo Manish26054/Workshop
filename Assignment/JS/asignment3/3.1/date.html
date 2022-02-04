@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Welcome to javascript</title>
+</head>
+
+<body>
+    <p id="datePara"></p>
+    <br>
+    <p id="greet"></p>
+    <script type="text/javascript">
+        var date = new Date();
+        var hr = date.getHours();
+        document.querySelector("#datePara").innerHTML = date;
+        if (hr < 12) {
+            document.querySelector("#greet").innerHTML = "Good Morning";
+        } else {
+            if (hr >= 12 && hr <= 17) {
+                document.querySelector("#greet").innerHTML = "Good Aftrnoon";
+            } else {
+                document.querySelector("#greet").innerHTML = "Good Evening";
+            }
+        }
+    </script>
+</body>
+
+</html>

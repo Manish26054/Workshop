@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DragnDrop</title>
+    <style>
+    #div1{
+        width: 100px; 
+        height: 100px ;
+        padding: 10px; 
+        border: 2px solid red;
+        background: black;
+    }
+
+    #drag1{
+        width: 100px;
+        height: 90px;
+    }
+    </style>
+</head>
+<body>
+
+    <div><h2><u> Drag and Drop the flower Inside the box!!! </u></h2></div>
+    <div id="div1"ondragover="allowDrop(event)" ondrop="drop(event)"></div><br><br>
+    <img id="drag1" src="https://images.unsplash.com/photo-1604085572504-a392ddf0d86a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8b3JhbmdlJTIwZmxvd2VyfGVufDB8fDB8fA%3D%3D&w=1000&q=80" 
+        alt="Flower.jpg"
+        draggable="true"
+        ondragstart="drag(event)"/>
+
+    <script>
+        function allowDrop(e){
+            e.preventDefault();
+        } 
+
+        function drag(e){
+            e.dataTransfer.setData("text",e.target.id);
+        }
+        function drop(e){
+            e.preventDefault();
+            var data=e.dataTransfer.getData("text");
+            e.target.appendChild(document.getElementById(data));
+        }
+ </script>
+</body>
+</html>
