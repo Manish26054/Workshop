@@ -1,0 +1,119 @@
+body {
+    background-color: rgb(8, 8, 8);
+  }
+.play-container{
+    padding-left: 0%;
+    padding-top: 2%;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.play-video{
+    flex-basis: 500px;
+}
+.right-sidebar{
+    flex-basis: 20%;
+    padding-left: 10px;
+} 
+/* .play-video video{
+    width: 100%;
+} */
+
+.play-video h3{
+    font-weight: 600;
+    font-size: 22px;
+    color: white;
+}
+.moviedate{
+    color: white;
+}
+
+.add-comment{
+    /* display: flex; */
+    align-items: center;
+    margin: 80px 0;
+    color: white;
+}
+.add-comment input{
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    width: 100%;
+    padding-top: 40px;
+    background: transparent;
+    color: white;
+}
+.add-comment button {
+    background-color: orangered; /* Green */
+    border: none;
+    color: rgb(5, 5, 5);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+.like,.dislike {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background: orangered;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    border-radius: 4px;
+}
+.dislike{
+    margin-left: 18px;
+}
+.fav,.add,.download,.share{
+    display: inline-block;
+    margin-bottom: 0;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background: orangered;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    border-radius: 4px;
+    color: black;
+}
+
+.qty1{
+    border: none;
+    width:45px;
+    background: transparent;
+}
+.qty2 {
+    border: none;
+    width:20px;
+    background: transparent;
+}
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: black;
+    color: rgb(26, 126, 79);
+  }
+
+
+
+
+
+
+
