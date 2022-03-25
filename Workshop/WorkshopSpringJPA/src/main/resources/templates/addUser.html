@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>User Registration</title>
+
+<style type="text/css">
+span{
+color: red;
+}
+</style>
+</head>
+<body>
+<div align="center">
+    <h1>User Registration</h1>
+    <form action="#" th:action="@{/addUser}" method="post" th:object="${user}">
+        <label>User ID</label>
+        <input type="number" th:field="*{userId}" hidden="true"/><br/>
+        <span th:if="${#fields.hasErrors('userId')}" th:errors="*{userId}"></span><br>
+ 
+        <label>User Name</label>
+        <input type="text" th:field="*{name}" /><br/>
+ 		<span th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span><br>
+        
+        <label>Email</label>
+        <input type="email" th:field="*{email}" /><br/>
+ 		<span th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span><br>
+ 		
+ 		
+        <label>Password</label>
+        <input type="password" th:field="*{password}" /><br/>
+        <span th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></span><br>
+ 		
+ 		<label>Contact</label>
+        <input type="number" th:field="*{contact}" /><br/>
+        <span th:if="${#fields.hasErrors('contact')}" th:errors="*{contact}"></span><br>
+        
+        <label>Address ID</label>
+        <input type="number" th:field="*{address_id}" /><br/>
+        
+        <label>Street</label>
+        <input type="text" th:field="*{street}" /><br/>
+        <span th:if="${#fields.hasErrors('street')}" th:errors="*{street}"></span><br>
+        <label>City</label>
+        <input type="text" th:field="*{city}" /><br/>
+        <span th:if="${#fields.hasErrors('city')}" th:errors="*{city}"></span><br>
+        
+        <label>State</label>
+        <input type="text" th:field="*{state}" /><br/>
+        <span th:if="${#fields.hasErrors('state')}" th:errors="*{state}"></span><br>
+        
+        <label>Pin Code</label>
+        <input type="number" th:field="*{pincode}" /><br/>
+        <span th:if="${#fields.hasErrors('pincode')}" th:errors="*{pincode}"></span><br>
+	    
+	    <button type="submit">Add</button>    
+    </form>
+</div>
+</body>
+</html>
