@@ -1,0 +1,8 @@
+.grid-container {
+  display: flex;
+  -moz-column-gap: 90px;
+       column-gap: 90px;
+  padding: 5rem;
+  justify-content: center;
+}
+/*# sourceMappingURL=app.component.css.map */
