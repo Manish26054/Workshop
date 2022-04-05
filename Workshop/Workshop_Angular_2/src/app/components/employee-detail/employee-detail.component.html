@@ -1,0 +1,25 @@
+<p>employee-detail works!</p>
+<div class="container">
+<div class="card" style="width: 18rem;" *ngFor="let employee of employees">
+    <img *ngIf="employee.flag" src="https://image.shutterstock.com/image-photo/passport-photo-portrait-middle-aged-260nw-1506715724.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{employee.empName | uppercase|convertToSpace:"-"}}</h5>
+      <p class="card-text">{{employee.designation}}</p>
+      <a href="#" class="btn btn-primary">{{employee.email}}</a>
+      <button class="btn btn-success" (click)="toggle(employee)">Toggle</button><br>
+
+      {{toDate | date}}
+              <p>medium : {{toDate | date:'medium'}} </p>
+              <p>short : {{toDate | date:'short'}} </p>
+              <p>fullDate : {{toDate | date:'fullDate'}} </p>
+              <p>longDate : {{toDate | date:'longDate'}} </p>
+              <p>mediumDate : {{toDate | date:'mediumDate'}} </p>
+              <p>shortDate : {{toDate | date:'shortDate'}} </p>
+              <p>mediumTime : {{toDate | date:'mediumTime'}} </p>
+              <p>dd-MM-y : {{toDate | date:'dd-MM-y'}} </p>
+              <p>dd-MM-yy HH:mm : {{toDate | date:'dd-MM-yy HH:mm'}}</p>
+              <p>Currency : {{ currency | currency:'INR':true:'3.2-6' }}</p>
+    </div>
+    
+  </div>
+</div>

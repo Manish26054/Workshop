@@ -1,0 +1,6 @@
+.container {
+  display: flex;
+  -moz-column-gap: 1;
+       column-gap: 1;
+}
+/*# sourceMappingURL=employee-detail.component.css.map */
