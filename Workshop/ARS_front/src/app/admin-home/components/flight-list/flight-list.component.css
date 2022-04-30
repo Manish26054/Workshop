@@ -1,0 +1,18 @@
+table{
+        width:80%;
+        margin-left: 150px;
+        box-shadow: 3px 3px 2px #cbced1, -3px -3px 2px #fff;
+                /* background-color: rgba(213, 230, 232, 0.5); */
+                background-color: #ecf0f3;
+                border-radius: 15px;
+                box-shadow: 3px 3px 2px #cbced1, -3px -3px 2px #fff
+        
+        }
+                th{
+                padding:20px 0px 20px 0px;
+               
+                }
+                td{
+                
+           
+                }

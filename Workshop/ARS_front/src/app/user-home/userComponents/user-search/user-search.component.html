@@ -1,0 +1,86 @@
+
+  <form  [formGroup]="searchForm" (ngSubmit)="Search()">
+        <div class="searchBox">
+            <div class="searchForm">
+        <div class="form-group">
+           <h2>Search</h2> <label>Source</label>
+            <input type="text" class="form-control" id="source" [(ngModel)]="source"
+            formControlName="source" >
+             <div class="error"  class="text-danger" *ngIf="searchForm.controls['source'].hasError('required') && searchForm.controls['source'].touched">source is required</div>
+            
+        </div>
+      
+        <div class="form-group">
+                <label>destination</label>
+                <input type="text" class="form-control" id="destination" [(ngModel)]="destination"
+                formControlName="destination" >
+                 <div class="error"  class="text-danger" *ngIf="searchForm.controls['destination'].hasError('required') && searchForm.controls['destination'].touched">destination is required</div>
+            
+            </div>
+            <div class="form-group">
+                <label>Date</label>
+                <input type="date" class="form-control" id="date" [(ngModel)]="date"
+                formControlName="date" >
+                <div class="error"  class="text-danger" *ngIf="searchForm.controls['date'].hasError('required') && searchForm.controls['date'].touched">date is required</div>
+            
+            </div>
+         
+            <button class="btn btn-success" type="submit"  id="search"  [disabled]="searchForm.invalid" >search</button>
+        </div></div>
+        </form>
+    
+    
+    <div class="my-5" *ngIf="flag">
+        <table class="table  text-center">
+            <thead>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Source</th>
+                <th>Destination</th>
+                <th>Date</th>
+                <th>Departure</th>
+                <th>Seats</th>
+                <th>Price</th>
+                <th>Actions</th>
+    
+            </thead>
+            <tbody>
+                <tr *ngFor="let flight of flights">
+                    <td>{{flight.flightId}}</td>
+                    <td>{{flight.flightName}}</td>
+                    <td>{{flight.source}}</td>
+                    <td>{{flight.destination}}</td>
+                    <td>{{flight.date}}</td>
+                    <td>{{flight.departureTime}}</td>
+                    <td>{{flight.capacity}}</td>
+                    <td>{{flight.price}}</td>
+                    
+                    <td>
+                        
+                        <!-- <button (click)="updateFlight(flight.flightId)" class="btn btn-info">Edit</button>
+                        <button (click)="deleteFlight(flight.flightId)" class="btn btn-danger" style="margin-left:10px">Delete</button> -->
+                        <button id="log" (click)="bookingRedirect(flight.flightId)" class="btn btn-dark">Book</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <mat-grid-list cols="4" rowHeight="1:1" >
+       
+        <mat-grid-tile *ngFor="let discount of discounts">
+        <mat-card class="example-card" >
+        <mat-card-title ><img src="../../../../assets/fonts/icon/icons8-fireworks-64.png">{{discount.discountCode}}</mat-card-title>
+        <mat-card-subtitle>{{discount.discountName}}</mat-card-subtitle>
+        <mat-card-content>
+          <!-- <p>{{discount.discountId}}</p> -->
+          <p>{{discount.discountPrice}}</p>
+          </mat-card-content>
+        <!-- <mat-card-actions>
+          <button mat-button   (click)="updateDiscount(discount.discountId)" >Edit</button>
+          <button mat-button  (click)="deleteCur(discount.discountId)">Remove</button>
+        </mat-card-actions> -->
+      </mat-card>
+    </mat-grid-tile>
+    
+    </mat-grid-list> 

@@ -1,0 +1,75 @@
+<h1>ADD FLIGHT</h1>
+<br>
+
+<form [formGroup]="flightForm" (ngSubmit)="onSubmit()">
+    <div class="searchBox">
+        <div class="searchForm"> 
+            <h2>Add Flight</h2>
+    <div class="form-group">
+        <label>Flight ID</label>
+        <input type="text" class="form-control" id="flightId"
+        [(ngModel)]="flight.flightId" formControlName="flightId">
+        <div class="error"  class="text-danger" *ngIf="flightForm.controls['flightId'].hasError('required') && flightForm.controls['flightId'].touched">FlightId is required</div>
+        
+    </div>
+    <div class="form-group">
+            <label>Flight Name</label>
+            <input type="text" class="form-control" id="flightName"
+            [(ngModel)]="flight.flightName" formControlName="flightName">
+            <div class="error"  class="text-danger" *ngIf="flightForm.controls['flightName'].hasError('required') && flightForm.controls['flightName'].touched">flightName is required</div>
+        
+        </div>
+        <div class="form-group">
+                <label>Source</label>
+                <input type="text" class="form-control" id="source"
+                [(ngModel)]="flight.source" formControlName="source">
+                <div class="error"  class="text-danger" *ngIf="flightForm.controls['source'].hasError('required') && flightForm.controls['source'].touched">source is required</div>
+        
+            </div>
+            <div class="form-group">
+                <label>Date</label>
+                <input type="date" class="form-control" id="date"
+                [(ngModel)]="flight.date" formControlName="date">
+                <div class="error"  class="text-danger" *ngIf="flightForm.controls['date'].hasError('required') && flightForm.controls['date'].touched">date is required</div>
+        
+            </div>
+            <div class="form-group">
+                    <label>destination</label>
+                    <input type="text" class="form-control" id="destination"
+                    [(ngModel)]="flight.destination" formControlName="destination">
+                    <div class="error"  class="text-danger" *ngIf="flightForm.controls['destination'].hasError('required') && flightForm.controls['destination'].touched">destination is required</div>
+        
+                </div>
+                <div class="form-group">
+                        <label>departureTime</label>
+                        <input type="time" class="form-control" id="departureTime" placeholder="mm"
+                        [(ngModel)]="flight.departureTime" formControlName="departureTime">
+                        <div class="error"  class="text-danger" *ngIf="flightForm.controls['departureTime'].hasError('required') && flightForm.controls['departureTime'].touched">departureTime is required</div>
+        
+                    </div>
+                    <div class="form-group">
+                            <label>arrivalTime</label>
+                            <input type="time" class="form-control" id="arrivalTime"
+                            [(ngModel)]="flight.arrivalTime" formControlName="arrivalTime">
+                            <div class="error"  class="text-danger" *ngIf="flightForm.controls['arrivalTime'].hasError('required') && flightForm.controls['arrivalTime'].touched">arrivalTime is required</div>
+        
+                        </div>
+                        <div class="form-group">
+                                <label>capacity</label>
+                                <input type="text" class="form-control" id="capacity"
+                                [(ngModel)]="flight.capacity" formControlName="capacity">
+                                <div class="error"  class="text-danger" *ngIf="flightForm.controls['capacity'].hasError('required') && flightForm.controls['capacity'].touched">capacity is required</div>
+        
+                            </div>
+                            <div class="form-group">
+                                    <label>price</label>
+                                    <input type="text" class="form-control" id="price"
+                                    [(ngModel)]="flight.price" formControlName="price">
+                                    <div class="error"  class="text-danger" *ngIf="flightForm.controls['price'].hasError('required') && flightForm.controls['price'].touched">Price is required</div>
+        
+                                </div>
+
+<button class="btn btn-success" type="submit" [disabled]="flightForm.invalid">ADD</button>
+</div></div>
+
+</form>

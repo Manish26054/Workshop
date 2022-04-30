@@ -1,0 +1,90 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" routerLink="login" >Login</a>
+              </li>
+   </ul>
+   </div>
+  </div>
+  </nav>
+  
+  <form  [formGroup]="searchForm" (ngSubmit)="Search()">
+    <div class="searchBox">
+        <div class="searchForm">
+    <div class="form-group">
+       <h2>Search</h2> <label>Source</label>
+        <!-- <input type="text" class="form-control" id="source" [(ngModel)]="source"
+        formControlName="source" > -->
+        <select name="source" id="" formControlName="source"    >
+            <option value="IND">IND</option>
+            
+            <option value="UK">UK</option>
+            
+            <option value="US">US</option>
+        </select>
+         <div class="error"  class="text-danger" *ngIf="searchForm.controls['source'].hasError('required') && searchForm.controls['source'].touched">source is required</div>
+        
+    </div>
+  
+    <div class="form-group">
+            <label>destination</label>
+            <input type="text" class="form-control" id="destination" [(ngModel)]="destination"
+            formControlName="destination" >
+             <div class="error"  class="text-danger" *ngIf="searchForm.controls['destination'].hasError('required') && searchForm.controls['destination'].touched">destination is required</div>
+        
+        </div>
+        <div class="form-group">
+            <label>Date</label>
+            <input type="date" class="form-control" id="date" [(ngModel)]="date"
+            formControlName="date" >
+            <div class="error"  class="text-danger" *ngIf="searchForm.controls['date'].hasError('required') && searchForm.controls['date'].touched">date is required</div>
+        
+        </div>
+     
+        <button class="btn btn-success" type="submit"  id="search"  [disabled]="searchForm.invalid" >search</button>
+    </div></div>
+    </form>
+
+
+<div class="my-5" *ngIf="flag">
+    <table class="table  text-center">
+        <thead>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Source</th>
+            <th>Destination</th>
+            <th>Date</th>
+            <th>Departure</th>
+            <th>Seats</th>
+            <th>Price</th>
+            <th>Actions</th>
+
+        </thead>
+        <tbody>
+            <tr *ngFor="let flight of flights">
+                <td>{{flight.flightId}}</td>
+                <td>{{flight.flightName}}</td>
+                <td>{{flight.source}}</td>
+                <td>{{flight.destination}}</td>
+                <td>{{flight.date}}</td>
+                <td>{{flight.departureTime}}</td>
+                <td>{{flight.capacity}}</td>
+                <td>{{flight.price}}</td>
+                
+                <td>
+                    
+                    <!-- <button (click)="updateFlight(flight.flightId)" class="btn btn-info">Edit</button>
+                    <button (click)="deleteFlight(flight.flightId)" class="btn btn-danger" style="margin-left:10px">Delete</button> -->
+                    <button id="log" (click)="loginRedirect()" class="btn btn-info">Login</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

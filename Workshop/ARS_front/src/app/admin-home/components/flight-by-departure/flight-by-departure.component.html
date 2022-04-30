@@ -1,0 +1,38 @@
+<span>
+        <button class="btn btn-dark" (click)="FlightByMorning()">Morning</button>
+        <button class="btn btn-dark" (click)="FlightByNoon()">Noon</button>
+        <button class="btn btn-dark" (click)="FlightByEvening()">Evening</button>
+        <button class="btn btn-dark" (click)="FlightByNight()">Night</button>
+        
+        </span>
+                <div class="my-5" *ngIf="flag">
+                <table class="table table-striped text-center">
+                    <thead>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Source</th>
+                        <th>Destination</th>
+                        <th>Date</th>
+                        <th>Departure</th>
+                        <th>Seats</th>
+                        <th>Price</th>
+                        <th>Actions</th>
+            
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let flight of flights">
+                            <td>{{flight.flightId}}</td>
+                            <td>{{flight.flightName}}</td>
+                            <td>{{flight.source}}</td>
+                            <td>{{flight.destination}}</td>
+                            <td>{{flight.date}}</td>
+                            <td>{{flight.departureTime}}</td>
+                            <td>{{flight.capacity}}</td>
+                            <td>{{flight.price}}</td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>

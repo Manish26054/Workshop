@@ -1,0 +1,9 @@
+.searchBox{
+        max-width: 450px;
+        min-height: 500px;
+        margin: 80px auto;
+        padding: 40px 30px 30px 30px;
+        background-color: #ecf0f3;
+        border-radius: 15px;
+        box-shadow: 3px 3px 2px #cbced1, -3px -3px 2px #fff
+}

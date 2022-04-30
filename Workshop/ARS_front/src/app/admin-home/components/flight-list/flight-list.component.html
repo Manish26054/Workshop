@@ -1,0 +1,81 @@
+<h2>Flight List</h2>
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" routerLink="abc" >Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" routerLinkActive="active" routerLink="bookings" (click)="noFlightList()" >Reservations</a>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" routerLinkActive="active" routerLink="addFlight" (click)="noFlightList()">Add Flight</a>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page"  routerLinkActive="active" routerLink="complaints" (click)="noFlightList()" >Complaints</a>
+              </li> 
+      
+               <li class="nav-item">
+                <a class="nav-link active" aria-current="page" routerLinkActive="active" routerLink="reports" (click)="noFlightList()" >Reports</a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" routerLinkActive="active" routerLink="offers" (click)="noFlightList()">Offers</a>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" routerLinkActive="active" routerLink="" >Logout</a>
+              </li> 
+              
+            </ul>
+           
+          </div>
+        </div>
+        
+      
+      </nav> -->
+      <!-- *ngIf="flag" -->
+<br>
+<app-flight-by-departure></app-flight-by-departure>
+      <br>
+     
+<div class="my-5" >
+        <table class="table  text-center">
+          
+          <thead>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Source</th>
+                <th>Destination</th>
+                <th>Date</th>
+                <th>Departure</th>
+                <th>Seats</th>
+                <th>Price</th>
+                <th>Actions</th>
+
+            </thead>
+            <tbody>
+                <tr *ngFor="let flight of flights">
+                    <td>{{flight.flightId}}</td>
+                    <td><img src="../../../../assets/fonts/icon/icons8-flight-64.png" height="25" width="25">{{flight.flightName}}</td>
+                    <td><img src="../../../../assets/fonts/icon/icons8-location-16.png" height="25" width="25">{{flight.source}}</td>
+                    <td><img src="../../../../assets/fonts/icon/icons8-location-50.png" height="25" width="25">{{flight.destination}}</td>
+                    <td><img src="../../../../assets/fonts/icon/icons8-date-64.png" height="25" width="25">{{flight.date}}</td>
+                    <td>{{flight.departureTime}}</td>
+                    <td><img src="../../../../assets/fonts/icon/icons8-theatre-seats-30.png" height="25" width="25">{{flight.capacity}}</td>
+                    <td><img src="../../../../assets/fonts/icon/icons8-rupee-64.png" height="25" width="25">{{flight.price}}</td>
+                    <td>
+                        <button (click)="updateFlight(flight.flightId)" class="btn btn-info"><img src="../../../../assets/fonts/icon/icons8-edit-64.png" height="25" width="25">Edit</button>
+                        <button (click)="deleteCur(flight.flightId)" class="btn btn-danger" style="margin-left:10px"><img src="../../../../assets/fonts/icon/icons8-delete-100.png" height="25" width="25">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+<!-- 
+    <router-outlet></router-outlet> -->

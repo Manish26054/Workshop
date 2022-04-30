@@ -1,0 +1,97 @@
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+<section class="signup">
+  <div class="container">
+      <div class="signup-content">
+          <div class="signup-form">
+              <h2 class="form-title">Registration</h2>
+              <h3 class="error" class="text-danger" >{{message}}</h3>
+              <form [formGroup]="registrationForm" (ngSubmit)="formSubmit()" method="POST" class="register-form" id="register-form">
+                  <div class="form-group">
+                      <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                      <input [(ngModel)]="user.firstName" formControlName="firstName" required type="text" name="firstName" id="firstName" placeholder="Your First Name"/>
+                      <div class="error"  class="text-danger" *ngIf="registrationForm.controls['firstName'].hasError('required') && registrationForm.controls['firstName'].touched">FirstName is required</div>
+                  </div>
+                  <div class="form-group">
+                    <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                    <input  [(ngModel)]="user.lastName" formControlName="lastName" required type="text" name="lastName" id="lastName" placeholder="Your Last Name"/>
+                    <div class="error"  class="text-danger" *ngIf="registrationForm.controls['lastName'].hasError('required') && registrationForm.controls['lastName'].touched">Lastname is required</div>
+                </div>
+                <div class="form-group">
+                  <label for="gender"><i class="zmdi zmdi-lock-gender"></i></label>
+                  <input [(ngModel)]="user.gender" required type="text" name="gender" value="" placeholder="Enter your gender" formControlName="gender" />
+                  <div class="error"  class="text-danger" *ngIf="registrationForm.controls['gender'].hasError('required') && registrationForm.controls['gender'].touched">Gender is required</div>
+                 </div>
+                  <div class="form-group">
+                      <label for="email"><i class="zmdi zmdi-email"></i></label>
+                      <input  [(ngModel)]="user.email" formControlName="email"  required type="email" name="email" id="email" placeholder="Your Email"/>
+                      <div class="error"  class="text-danger" *ngIf="registrationForm.controls['email'].hasError('required') && registrationForm.controls['email'].touched">Email is required</div>
+                  </div>
+                  <div class="form-group">
+                      <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                      <input  [(ngModel)]="user.password" formControlName="password" required type="password" name="password" id="password" placeholder="Password"/>
+                      <div class="error"  class="text-danger" *ngIf="registrationForm.controls['password'].hasError('required') && registrationForm.controls['password'].touched">Password is required</div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="contact"><i class="zmdi zmdi-lock-contact"></i></label>
+                    <input [(ngModel)]="user.contact" required type="number" name="contact" value="" placeholder="Enter your 10-digit mobile number" formControlName="contact" />
+                    <div class="error"  class="text-danger" *ngIf="registrationForm.controls['contact'].hasError('required') && registrationForm.controls['contact'].touched">Mobile number is required</div>
+                   </div>
+
+                  <div class="form-group">
+                      <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                      <label for="agree-term" class="label-agree-term"><span><span></span></span>By clicking Create my account, you agree to our Terms and that you have read our Data
+                        Use Policy, including our Cookie Use.<a href="#" class="term-service">Terms of service</a></label>
+                  </div>
+                  <div class="form-group form-button">
+                      <input type="submit" [disabled]="registrationForm.invalid"  name="signup" id="signup" class="form-submit" />
+                  </div>
+              </form>
+          </div>
+          <div class="signup-image">
+              <figure><img src="../../../assets/signin-image.jpg" alt="sing up image"></figure>
+              <h3><u>Iam Already A Member</u> <a routerLink="/login" class="sigin-image-link"> Login</a></h3>
+          </div>
+      </div>
+  </div>
+</section>
+
+<script>
+  function emailCheck(){
+      if($("#email").val()==""){
+          $("#email").addClass('is-invalid');
+          return false;
+      }else{
+          var regMail     =   /^([_a-zA-Z0-9-]+)(\.[_a-zA-Z0-9-]+)*@([a-zA-Z0-9-]+\.)+([a-zA-Z]{2,3})$/;
+          if(regMail.test($("#email").val()) == false){
+              $("#email").addClass('is-invalid');
+              return false;
+          }else{
+              $("#email").removeClass('is-invalid');
+              $('#next-form').collapse('show');
+          }
+
+      }
+  }
+  function validation(){
+      if($("#contact, #password, #confirmPassword").val()==""){
+          $("#contact, #password, #confirmPassword").addClass('is-invalid');
+          return false;
+      }else{
+          $("#contact, #password, #confirmPassword").removeClass('is-invalid');
+      }
+       
+      if($("#password").val()!=$("#confirmPassword").val()){
+          $("#confirmPassword").addClass('is-invalid');
+          $("#confirmPassword").html('<span class="text-danger">Password and confirm password not matched!</span>');
+          return false;
+      }
+  }
+  
+</script>
