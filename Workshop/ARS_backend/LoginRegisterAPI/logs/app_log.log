@@ -1,0 +1,131 @@
+[INFO ] 2022-04-27 00:58:28.675 [main] LoginRegisterApiApplication - Starting LoginRegisterApiApplication using Java 15 on Manishkumars-VD with PID 9564 (E:\Training\Major_project\Server\LoginRegisterAPI\target\classes started by manishkumars in E:\Training\Major_project\Server\LoginRegisterAPI)
+[INFO ] 2022-04-27 00:58:28.684 [main] LoginRegisterApiApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-04-27 00:58:32.361 [main] LoginRegisterApiApplication - Started LoginRegisterApiApplication in 4.171 seconds (JVM running for 5.24)
+[INFO ] 2022-04-27 00:58:38.244 [http-nio-9001-exec-3] LoginController - com.cybage.airline.models.LoginCredentials@4548d88f
+[INFO ] 2022-04-27 00:58:38.244 [http-nio-9001-exec-3] LoginController - Customer has logged in !!!
+[INFO ] 2022-04-27 01:01:35.888 [main] LoginRegisterApiApplication - Starting LoginRegisterApiApplication using Java 15 on Manishkumars-VD with PID 6680 (E:\Training\Major_project\Server\LoginRegisterAPI\target\classes started by manishkumars in E:\Training\Major_project\Server\LoginRegisterAPI)
+[INFO ] 2022-04-27 01:01:35.898 [main] LoginRegisterApiApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-04-27 01:01:39.653 [main] LoginRegisterApiApplication - Started LoginRegisterApiApplication in 4.221 seconds (JVM running for 5.257)
+[INFO ] 2022-04-27 01:01:43.527 [http-nio-9001-exec-2] LoginController - com.cybage.airline.models.LoginCredentials@371b40d4
+[INFO ] 2022-04-27 01:01:43.528 [http-nio-9001-exec-2] LoginController - Customer has logged in !!!
+[INFO ] 2022-04-27 01:03:00.352 [main] LoginRegisterApiApplication - Starting LoginRegisterApiApplication using Java 15 on Manishkumars-VD with PID 24528 (E:\Training\Major_project\Server\LoginRegisterAPI\target\classes started by manishkumars in E:\Training\Major_project\Server\LoginRegisterAPI)
+[INFO ] 2022-04-27 01:03:00.362 [main] LoginRegisterApiApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-04-27 01:03:04.293 [main] LoginRegisterApiApplication - Started LoginRegisterApiApplication in 4.461 seconds (JVM running for 5.488)
+[INFO ] 2022-04-27 01:03:05.261 [http-nio-9001-exec-2] LoginController - Customer entered credentials =>com.cybage.airline.models.LoginCredentials@5b8a5de2
+[INFO ] 2022-04-27 01:03:05.261 [http-nio-9001-exec-2] LoginController - Customer has logged in !!!
+[INFO ] 2022-04-27 01:07:43.188 [main] LoginRegisterApiApplication - Starting LoginRegisterApiApplication using Java 15 on Manishkumars-VD with PID 15172 (E:\Training\Major_project\Server\LoginRegisterAPI\target\classes started by manishkumars in E:\Training\Major_project\Server\LoginRegisterAPI)
+[INFO ] 2022-04-27 01:07:43.196 [main] LoginRegisterApiApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-04-27 01:07:46.863 [main] LoginRegisterApiApplication - Started LoginRegisterApiApplication in 4.147 seconds (JVM running for 5.153)
+[INFO ] 2022-04-27 01:07:55.431 [http-nio-9001-exec-1] LoginController - Customer entered credentials =>LoginCredentials [email=manish@gmail.com, password=manish@123]
+[INFO ] 2022-04-27 01:07:55.431 [http-nio-9001-exec-1] LoginController - Customer has logged in !!!
+[INFO ] 2022-04-27 01:08:51.779 [http-nio-9001-exec-3] RegistrationController - User registration form data =>User [userId=0, firstName=Nishant, lastName=Srivastava, email=nishant@gmail.com, password=nishant@123, gender=Male, contact=8871408578, role=customer]
+[INFO ] 2022-04-27 01:08:51.948 [http-nio-9001-exec-3] RegistrationController - Saved data in database=>User [userId=44, firstName=Nishant, lastName=Srivastava, email=nishant@gmail.com, password=nishant@123, gender=Male, contact=8871408578, role=customer]
+[INFO ] 2022-04-27 01:09:08.180 [http-nio-9001-exec-5] RegistrationController - User registration form data =>User [userId=0, firstName=Nishant, lastName=Srivastava, email=nishant@gmail.com, password=nishant@123, gender=Male, contact=8871408578, role=customer]
+[ERROR] 2022-04-27 01:09:08.183 [http-nio-9001-exec-5] RegistrationController - User entered email already exist=>nishant@gmail.com
+[INFO ] 2022-04-27 01:27:10.174 [main] LoginRegisterApiApplication - Starting LoginRegisterApiApplication using Java 15 on Manishkumars-VD with PID 4064 (E:\Training\Major_project\Server\LoginRegisterAPI\target\classes started by manishkumars in E:\Training\Major_project\Server\LoginRegisterAPI)
+[INFO ] 2022-04-27 01:27:10.182 [main] LoginRegisterApiApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-04-27 01:27:14.299 [main] LoginRegisterApiApplication - Started LoginRegisterApiApplication in 4.892 seconds (JVM running for 6.092)
+[INFO ] 2022-04-27 01:31:10.023 [main] LoginRegisterApiApplication - Starting LoginRegisterApiApplication using Java 15 on Manishkumars-VD with PID 3648 (E:\Training\Major_project\Server\LoginRegisterAPI\target\classes started by manishkumars in E:\Training\Major_project\Server\LoginRegisterAPI)
+[INFO ] 2022-04-27 01:31:10.027 [main] LoginRegisterApiApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-04-27 01:31:20.530 [main] LoginRegisterApiApplication - Started LoginRegisterApiApplication in 16.225 seconds (JVM running for 17.31)
+[INFO ] 2022-04-27 01:32:13.397 [main] LoginRegisterApiApplication - Starting LoginRegisterApiApplication using Java 15 on Manishkumars-VD with PID 15012 (E:\Training\Major_project\Server\LoginRegisterAPI\target\classes started by manishkumars in E:\Training\Major_project\Server\LoginRegisterAPI)
+[INFO ] 2022-04-27 01:32:13.407 [main] LoginRegisterApiApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-04-27 01:32:17.402 [main] LoginRegisterApiApplication - Started LoginRegisterApiApplication in 4.491 seconds (JVM running for 5.546)
+[INFO ] 2022-04-27 01:33:10.477 [http-nio-9001-exec-2] RegistrationController - User registration form data =>User [userId=0, firstName=Nishant, lastName=Srivastava, email=nishant@gmail.com, password=nishant@123, gender=Male, contact=8871408578, role=customer]
+[ERROR] 2022-04-27 01:33:10.653 [http-nio-9001-exec-2] RegistrationController - User entered email already exist=>nishant@gmail.com
+[INFO ] 2022-04-27 01:33:17.536 [http-nio-9001-exec-4] LoginController - Customer entered credentials =>LoginCredentials [email=manish@gmail.com, password=manish@123]
+[INFO ] 2022-04-27 01:33:17.536 [http-nio-9001-exec-4] LoginController - Customer has logged in !!!
+[INFO ] 2022-04-27 01:37:07.230 [main] LoginRegisterApiApplication - Starting LoginRegisterApiApplication using Java 15 on Manishkumars-VD with PID 3616 (E:\Training\Major_project\Server\LoginRegisterAPI\target\classes started by manishkumars in E:\Training\Major_project\Server\LoginRegisterAPI)
+[INFO ] 2022-04-27 01:37:07.241 [main] LoginRegisterApiApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-04-27 01:37:10.920 [main] LoginRegisterApiApplication - Started LoginRegisterApiApplication in 4.189 seconds (JVM running for 5.258)
+[INFO ] 2022-04-27 01:37:16.765 [http-nio-9001-exec-2] LoginController - Customer entered credentials =>LoginCredentials [email=manish@gmail.com, password=manish@123]
+[INFO ] 2022-04-27 01:37:16.765 [http-nio-9001-exec-2] LoginController - Customer has logged in !!!
+[INFO ] 2022-04-27 01:38:25.560 [main] LoginRegisterApiApplication - Starting LoginRegisterApiApplication using Java 15 on Manishkumars-VD with PID 11764 (E:\Training\Major_project\Server\LoginRegisterAPI\target\classes started by manishkumars in E:\Training\Major_project\Server\LoginRegisterAPI)
+[INFO ] 2022-04-27 01:38:25.568 [main] LoginRegisterApiApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-04-27 01:38:29.392 [main] LoginRegisterApiApplication - Started LoginRegisterApiApplication in 4.298 seconds (JVM running for 5.313)
+[INFO ] 2022-04-27 01:38:33.247 [http-nio-9001-exec-1] LoginController - Customer entered credentials =>LoginCredentials [email=manish@gmail.com, password=manish@123]
+[INFO ] 2022-04-27 01:38:33.247 [http-nio-9001-exec-1] LoginController - Customer has logged in !!!
+[INFO ] 2022-04-27 01:51:49.720 [main] LoginRegisterApiApplication - Starting LoginRegisterApiApplication using Java 15 on Manishkumars-VD with PID 872 (E:\Training\Major_project\Server\LoginRegisterAPI\target\classes started by manishkumars in E:\Training\Major_project\Server\LoginRegisterAPI)
+[INFO ] 2022-04-27 01:51:49.727 [main] LoginRegisterApiApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-04-27 01:51:53.235 [main] LoginRegisterApiApplication - Started LoginRegisterApiApplication in 3.977 seconds (JVM running for 5.009)
+[INFO ] 2022-04-27 01:51:57.847 [http-nio-9001-exec-1] LoginController - Customer entered credentials =>LoginCredentials [email=manish@gmail.com, password=manish@123]
+[INFO ] 2022-04-27 01:51:57.847 [http-nio-9001-exec-1] LoginController - Customer has logged in !!!
+[INFO ] 2022-04-27 01:54:37.930 [main] LoginRegisterApiApplication - Starting LoginRegisterApiApplication using Java 15 on Manishkumars-VD with PID 20280 (E:\Training\Major_project\Server\LoginRegisterAPI\target\classes started by manishkumars in E:\Training\Major_project\Server\LoginRegisterAPI)
+[INFO ] 2022-04-27 01:54:37.940 [main] LoginRegisterApiApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-04-27 01:54:41.530 [main] LoginRegisterApiApplication - Started LoginRegisterApiApplication in 4.076 seconds (JVM running for 5.101)
+[INFO ] 2022-04-27 01:54:45.566 [http-nio-9001-exec-1] LoginController - Customer entered credentials =>LoginCredentials [email=manish@gmail.com, password=manish@123]
+[INFO ] 2022-04-27 01:54:45.566 [http-nio-9001-exec-1] LoginController - Customer has logged in !!!
+[INFO ] 2022-04-27 01:56:34.017 [main] LoginRegisterApiApplication - Starting LoginRegisterApiApplication using Java 15 on Manishkumars-VD with PID 17292 (E:\Training\Major_project\Server\LoginRegisterAPI\target\classes started by manishkumars in E:\Training\Major_project\Server\LoginRegisterAPI)
+[INFO ] 2022-04-27 01:56:34.027 [main] LoginRegisterApiApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-04-27 01:56:37.731 [main] LoginRegisterApiApplication - Started LoginRegisterApiApplication in 4.209 seconds (JVM running for 5.263)
+[INFO ] 2022-04-27 01:56:43.231 [http-nio-9001-exec-1] LoginController - Customer entered credentials =>LoginCredentials [email=manish@gmail.com, password=manish@123]
+[INFO ] 2022-04-27 01:56:43.231 [http-nio-9001-exec-1] LoginController - Customer has logged in !!!
+[INFO ] 2022-04-27 01:59:24.045 [main] LoginRegisterApiApplication - Starting LoginRegisterApiApplication using Java 15 on Manishkumars-VD with PID 17152 (E:\Training\Major_project\Server\LoginRegisterAPI\target\classes started by manishkumars in E:\Training\Major_project\Server\LoginRegisterAPI)
+[INFO ] 2022-04-27 01:59:24.053 [main] LoginRegisterApiApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-04-27 01:59:27.703 [main] LoginRegisterApiApplication - Started LoginRegisterApiApplication in 4.152 seconds (JVM running for 5.262)
+[INFO ] 2022-04-27 01:59:47.549 [http-nio-9001-exec-1] LoginController - Customer entered credentials =>LoginCredentials [email=manish@gmail.com, password=manish@123]
+[INFO ] 2022-04-27 01:59:47.549 [http-nio-9001-exec-1] LoginController - Customer has logged in !!!
+[INFO ] 2022-04-27 02:01:29.787 [main] LoginRegisterApiApplication - Starting LoginRegisterApiApplication using Java 15 on Manishkumars-VD with PID 19400 (E:\Training\Major_project\Server\LoginRegisterAPI\target\classes started by manishkumars in E:\Training\Major_project\Server\LoginRegisterAPI)
+[INFO ] 2022-04-27 02:01:29.794 [main] LoginRegisterApiApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-04-27 02:01:33.646 [main] LoginRegisterApiApplication - Started LoginRegisterApiApplication in 4.331 seconds (JVM running for 5.361)
+[INFO ] 2022-04-27 02:01:36.527 [http-nio-9001-exec-2] LoginController - Customer entered credentials =>LoginCredentials [email=manish@gmail.com, password=manish@123]
+[INFO ] 2022-04-27 02:01:36.528 [http-nio-9001-exec-2] LoginController - Customer has logged in !!!
+[INFO ] 2022-04-27 02:06:15.090 [main] LoginRegisterApiApplication - Starting LoginRegisterApiApplication using Java 15 on Manishkumars-VD with PID 18268 (E:\Training\Major_project\Server\LoginRegisterAPI\target\classes started by manishkumars in E:\Training\Major_project\Server\LoginRegisterAPI)
+[INFO ] 2022-04-27 02:06:15.097 [main] LoginRegisterApiApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-04-27 02:06:20.860 [main] LoginRegisterApiApplication - Starting LoginRegisterApiApplication using Java 15 on Manishkumars-VD with PID 15268 (E:\Training\Major_project\Server\LoginRegisterAPI\target\classes started by manishkumars in E:\Training\Major_project\Server\LoginRegisterAPI)
+[INFO ] 2022-04-27 02:06:20.868 [main] LoginRegisterApiApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-04-27 02:06:24.547 [main] LoginRegisterApiApplication - Started LoginRegisterApiApplication in 4.183 seconds (JVM running for 5.181)
+[INFO ] 2022-04-27 02:06:28.090 [http-nio-9001-exec-2] LoginController - Customer entered credentials =>LoginCredentials [email=manish@gmail.com, password=manish@123]
+[INFO ] 2022-04-27 02:06:28.091 [http-nio-9001-exec-2] LoginController - Customer has logged in !!!
+[INFO ] 2022-04-27 02:08:16.738 [main] LoginRegisterApiApplication - Starting LoginRegisterApiApplication using Java 15 on Manishkumars-VD with PID 22172 (E:\Training\Major_project\Server\LoginRegisterAPI\target\classes started by manishkumars in E:\Training\Major_project\Server\LoginRegisterAPI)
+[INFO ] 2022-04-27 02:08:16.746 [main] LoginRegisterApiApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-04-27 02:08:20.530 [main] LoginRegisterApiApplication - Started LoginRegisterApiApplication in 4.314 seconds (JVM running for 5.439)
+[INFO ] 2022-04-27 02:08:24.095 [http-nio-9001-exec-2] LoginController - Customer entered credentials =>LoginCredentials [email=manish@gmail.com, password=manish@123]
+[INFO ] 2022-04-27 02:08:24.095 [http-nio-9001-exec-2] LoginController - Customer has logged in !!!
+[INFO ] 2022-04-27 02:14:53.193 [main] LoginRegisterApiApplication - Starting LoginRegisterApiApplication using Java 15 on Manishkumars-VD with PID 20696 (E:\Training\Major_project\Server\LoginRegisterAPI\target\classes started by manishkumars in E:\Training\Major_project\Server\LoginRegisterAPI)
+[INFO ] 2022-04-27 02:14:53.201 [main] LoginRegisterApiApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-04-27 02:14:57.834 [main] LoginRegisterApiApplication - Started LoginRegisterApiApplication in 5.137 seconds (JVM running for 6.23)
+[INFO ] 2022-04-27 02:15:00.751 [http-nio-9001-exec-2] LoginController - Customer entered credentials =>LoginCredentials [email=manish@gmail.com, password=manish@123]
+[INFO ] 2022-04-27 02:15:00.751 [http-nio-9001-exec-2] LoginController - Customer has logged in !!!
+[INFO ] 2022-04-27 02:25:06.623 [main] LoginRegisterApiApplication - Starting LoginRegisterApiApplication using Java 15 on Manishkumars-VD with PID 16840 (E:\Training\Major_project\Server\LoginRegisterAPI\target\classes started by manishkumars in E:\Training\Major_project\Server\LoginRegisterAPI)
+[INFO ] 2022-04-27 02:25:06.631 [main] LoginRegisterApiApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-04-27 02:25:10.305 [main] LoginRegisterApiApplication - Started LoginRegisterApiApplication in 4.138 seconds (JVM running for 5.16)
+[INFO ] 2022-04-27 02:25:13.566 [http-nio-9001-exec-1] LoginController - Customer entered credentials =>LoginCredentials [email=manish@gmail.com, password=manish@123]
+[INFO ] 2022-04-27 02:25:13.567 [http-nio-9001-exec-1] LoginController - Customer has logged in !!!
+[INFO ] 2022-04-29 13:37:15.032 [main] LoginRegisterApiApplication - Starting LoginRegisterApiApplication using Java 15 on Manishkumars-VD with PID 13588 (E:\Training\Major_project\Server\LoginRegisterAPI\target\classes started by manishkumars in E:\Training\Major_project\Server\LoginRegisterAPI)
+[INFO ] 2022-04-29 13:37:15.054 [main] LoginRegisterApiApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-04-29 13:37:19.983 [main] LoginRegisterApiApplication - Started LoginRegisterApiApplication in 5.589 seconds (JVM running for 6.975)
+[INFO ] 2022-04-29 18:14:46.406 [http-nio-9001-exec-1] LoginController - Customer entered credentials =>LoginCredentials [email=manish@gmail.com, password=manish@123]
+[INFO ] 2022-04-29 18:14:46.407 [http-nio-9001-exec-1] LoginController - Customer has logged in !!!
+[INFO ] 2022-04-29 18:23:54.765 [http-nio-9001-exec-3] LoginController - Customer entered credentials =>LoginCredentials [email=manish@gmail.com, password=manish@123]
+[INFO ] 2022-04-29 18:23:54.766 [http-nio-9001-exec-3] LoginController - Customer has logged in !!!
+[INFO ] 2022-04-29 18:25:11.648 [http-nio-9001-exec-5] LoginController - Customer entered credentials =>LoginCredentials [email=manish@gmail.com, password=manish@123]
+[INFO ] 2022-04-29 18:25:11.648 [http-nio-9001-exec-5] LoginController - Customer has logged in !!!
+[INFO ] 2022-04-29 18:25:28.629 [http-nio-9001-exec-6] LoginController - Customer entered credentials =>LoginCredentials [email=manish@gmail.com, password=manish@123]
+[INFO ] 2022-04-29 18:25:28.629 [http-nio-9001-exec-6] LoginController - Customer has logged in !!!
+[INFO ] 2022-04-29 18:26:24.477 [http-nio-9001-exec-7] LoginController - Customer entered credentials =>LoginCredentials [email=manish@gmail.com, password=manish@123]
+[INFO ] 2022-04-29 18:26:24.477 [http-nio-9001-exec-7] LoginController - Customer has logged in !!!
+[INFO ] 2022-04-29 18:26:41.823 [http-nio-9001-exec-8] LoginController - Customer entered credentials =>LoginCredentials [email=manish@gmail.com, password=manish@123]
+[INFO ] 2022-04-29 18:26:41.823 [http-nio-9001-exec-8] LoginController - Customer has logged in !!!
+[INFO ] 2022-04-29 18:26:50.637 [http-nio-9001-exec-9] LoginController - Customer entered credentials =>LoginCredentials [email=manish@gmail.com, password=manish@123]
+[INFO ] 2022-04-29 18:26:50.637 [http-nio-9001-exec-9] LoginController - Customer has logged in !!!
+[INFO ] 2022-04-29 18:27:04.920 [http-nio-9001-exec-10] LoginController - Customer entered credentials =>LoginCredentials [email=manish@gmail.com, password=manish@123]
+[INFO ] 2022-04-29 18:27:04.921 [http-nio-9001-exec-10] LoginController - Customer has logged in !!!
+[INFO ] 2022-04-29 18:27:44.822 [http-nio-9001-exec-1] LoginController - Customer entered credentials =>LoginCredentials [email=manish@gmail.com, password=manish@123]
+[INFO ] 2022-04-29 18:27:44.823 [http-nio-9001-exec-1] LoginController - Customer has logged in !!!
+[INFO ] 2022-04-29 18:28:03.099 [http-nio-9001-exec-2] LoginController - Customer entered credentials =>LoginCredentials [email=manish@gmail.com, password=manish@123]
+[INFO ] 2022-04-29 18:28:03.100 [http-nio-9001-exec-2] LoginController - Customer has logged in !!!
+[INFO ] 2022-04-29 18:28:18.325 [http-nio-9001-exec-3] LoginController - Customer entered credentials =>LoginCredentials [email=manish@gmail.com, password=manish@123]
+[INFO ] 2022-04-29 18:28:18.325 [http-nio-9001-exec-3] LoginController - Customer has logged in !!!
+[INFO ] 2022-04-29 18:28:35.643 [http-nio-9001-exec-4] LoginController - Customer entered credentials =>LoginCredentials [email=manish@gmail.com, password=manish@123]
+[INFO ] 2022-04-29 18:28:35.643 [http-nio-9001-exec-4] LoginController - Customer has logged in !!!
+[INFO ] 2022-04-29 18:29:13.729 [http-nio-9001-exec-5] LoginController - Customer entered credentials =>LoginCredentials [email=manish@gmail.com, password=manish@123]
+[INFO ] 2022-04-29 18:29:13.729 [http-nio-9001-exec-5] LoginController - Customer has logged in !!!
+[INFO ] 2022-04-29 18:29:23.707 [http-nio-9001-exec-6] LoginController - Customer entered credentials =>LoginCredentials [email=manish@gmail.com, password=manjids]
+[ERROR] 2022-04-29 18:29:23.708 [http-nio-9001-exec-6] LoginController - Invalid user credentials !!!LoginCredentials [email=manish@gmail.com, password=manjids]
+[INFO ] 2022-04-29 18:29:35.156 [http-nio-9001-exec-7] LoginController - Customer entered credentials =>LoginCredentials [email=manish@gmail.com, password=manish@123]
+[INFO ] 2022-04-29 18:29:35.156 [http-nio-9001-exec-7] LoginController - Customer has logged in !!!
+[INFO ] 2022-04-29 18:29:47.386 [http-nio-9001-exec-8] LoginController - Customer entered credentials =>LoginCredentials [email=manish@gmail.com, password=manish@123]
+[INFO ] 2022-04-29 18:29:47.386 [http-nio-9001-exec-8] LoginController - Customer has logged in !!!
+[INFO ] 2022-04-29 18:30:15.384 [http-nio-9001-exec-9] LoginController - Customer entered credentials =>LoginCredentials [email=manish@gmail.com, password=manish@123]
+[INFO ] 2022-04-29 18:30:15.384 [http-nio-9001-exec-9] LoginController - Customer has logged in !!!

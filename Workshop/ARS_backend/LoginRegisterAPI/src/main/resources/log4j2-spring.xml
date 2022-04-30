@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration monitorInterval="60">
+	<Properties>
+		<Property name="log-path">logs</Property>
+	</Properties>
+	<Appenders>
+		<Console name="Console-Appender" target="SYSTEM_OUT">
+			<PatternLayout>
+				<pattern>
+					[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n
+				</pattern>
+			</PatternLayout>
+		</Console>
+		<File name="App-File-Appender" fileName="${log-path}/app_log.log">
+			<PatternLayout>
+				<pattern>
+					[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n
+				</pattern>
+			</PatternLayout>
+		</File>
+
+		<!-- DB Logger -->
+		<DB name="DB" class="org.apache.log4j.jdbc.JDBCAppender">
+			<param name="URL"
+				value="jdbc:mysql://localhost:3306/airline_management_system" />
+			value="jdbc:mysql://localhost:3306;databaseName=airline_management_system;user=root;password=developer"
+			/>
+			<param name="driver" value="com.mysql.cj.jdbc.Driver" />
+			<param name="user" value="root" />
+			<param name="password" value="developer" />
+			<param name="sql"
+				value="INSERT INTO LOGS VALUES('%x','%d','%c','%p', '%m')" />
+			<layout class="org.apache.log4j.PatternLayout">
+			</layout>
+		</DB>
+	</Appenders>
+	<Loggers>
+		<Logger name="org.springframework.web" level="info"
+			additivity="false">
+			<AppenderRef ref="SpringBoot-File-Appender" />
+			<AppenderRef ref="Console-Appender" />
+		</Logger>
+		<Logger name="com.cybage.airline" level="info"
+			additivity="false">
+			<AppenderRef ref="App-File-Appender" />
+			<AppenderRef ref="Console-Appender" />
+			<appender-ref ref="DB" />
+		</Logger>
+		<Root>
+			<priority value="DEBUG" />
+			<appender-ref ref="Console-Appender" />
+			<appender-ref ref="DB" />
+		</Root>
+	</Loggers>
+</Configuration>
